@@ -38,7 +38,7 @@ const Header = () => {
         <div className="header-content">
           <div className="header-logo">
             <span className="logo-text">
-              Iram Azalia
+              Isaí López
             </span>
           </div>
 

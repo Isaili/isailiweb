@@ -3,9 +3,9 @@ import './PlaylistWidget.css';
 
 const PlaylistWidget = ({ songs = [] }) => {
   const defaultSongs = [
-    { name: 'PM', artist: 'MVLDITOS HOMBRES', spotifyUrl: 'https://open.spotify.com/intl-es/track/46ePpPGWWhOb37HFqQVsHA?si=4234c4514afc42d6' },
-    { name: 'Shock en mi costa', artist: 'Plastical people', spotifyUrl: 'https://open.spotify.com/intl-es/track/46ePpPGWWhOb37HFqQVsHA?si=c3a1dc8923da4365' },
-    { name: 'Trouble', artist: 'Coldplay', spotifyUrl: 'https://open.spotify.com/intl-es/track/0R8P9KfGJCDULmlEoBagcO?si=46cec71bb401482b' },
+    { name: 'Bellavista 130', artist: 'JuanPalitosChinos', spotifyUrl: 'https://open.spotify.com/intl-es/track/1yXiLIBmJau1WnLruUy3k5?si=45fc870b3d334516' },
+    { name: 'De Mentiritas', artist: 'Valdo Rodriguez', spotifyUrl: 'https://open.spotify.com/intl-es/track/7JsK6SwLprWuHUTPKQd3Pf?si=6db4a938501247b3' },
+    { name: 'Relato Corto', artist: 'Sabino', spotifyUrl: 'https://open.spotify.com/intl-es/track/3sGO3yiBeLOIBEfLUsvTEq?si=7341391020df4d58' },
   ];
 
   const playlist = songs.length > 0 ? songs : defaultSongs;
@@ -16,7 +16,7 @@ const PlaylistWidget = ({ songs = [] }) => {
         <FaSpotify className="text-2xl text-green-500" />
         <div>
           <h3 className="text-sm font-semibold text-gray-800">Mi Playlist</h3>
-          <p className="text-xs text-gray-500">La música dice todo lo que no puedo decir</p>
+          <p className="text-xs text-gray-500">Hay sentimientos que solo una melodía puede traducir.</p>
         </div>
       </div>
       <div className="space-y-2">

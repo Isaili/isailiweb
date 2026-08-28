@@ -1,25 +1,36 @@
 import { 
-  FaReact, 
-  FaNode, 
-  FaGitAlt,
-  FaDocker,
   FaAws,
-  FaCode,
+  FaDiscord,
+  FaFigma,
+  FaWordpress,
+  FaRaspberryPi,
+  FaGithub,
+  FaJava,
+  FaNodeJs,
+  FaPython,
+  FaReact,
+  FaTwitter,
+  FaInstagram,
+  FaPhp,
 } from 'react-icons/fa';
 import { 
-  SiNestjs, 
-  SiTypescript, 
-  SiJavascript,
-  SiPostgresql,
-  SiMysql,
-  SiDotnet,
-  SiReact,
   SiHtml5,
   SiCss3,
-  SiPython,
-  SiTailwindcss,
-  SiAngular,
+  SiPostgresql,
   SiExpress,
+  SiAdobephotoshop,
+  SiAdobexd,
+  SiAdobeillustrator,
+  SiJavascript,
+  SiMongodb,
+  SiMysql,
+  SiPostman,
+  SiTypescript,
+  SiGmail,
+  SiFlutter,
+  SiAngular,
+  SiKotlin,
+  SiNextdotjs,
 } from 'react-icons/si';
 import SkillCard from './SkillCard';
 import { useScrollAnimation } from '../hooks/useScrollAnimation';
@@ -27,28 +38,38 @@ import './Skills.css';
 
 const Skills = () => {
   const [ref, isVisible] = useScrollAnimation({ threshold: 0.1 });
-  
   const skills = [
-    { name: 'C#', icon: SiDotnet, level: 'advanced' },
-    { name: 'React', icon: FaReact, level: 'advanced' },
-    { name: 'React Native', icon: SiReact, level: 'intermediate' },
-    { name: 'TypeScript', icon: SiTypescript, level: 'advanced' },
-    { name: 'JavaScript', icon: SiJavascript, level: 'advanced' },
+    { name: 'AWS', icon: FaAws, level: 'intermediate' },
     { name: 'HTML5', icon: SiHtml5, level: 'advanced' },
     { name: 'CSS3', icon: SiCss3, level: 'advanced' },
-    { name: 'Tailwind CSS', icon: SiTailwindcss, level: 'advanced' },
-    { name: 'Angular', icon: SiAngular, level: 'advanced' },
-    { name: 'NestJS', icon: SiNestjs, level: 'advanced' },
-    { name: 'Node.js', icon: FaNode, level: 'advanced' },
-    { name: 'FastAPI', icon: SiPython, level: 'intermediate' },
-    { name: 'SQL Server', icon: SiMysql, level: 'advanced' },
-    { name: 'MySQL', icon: SiMysql, level: 'advanced' },
+    { name: 'Discord', icon: FaDiscord, level: 'advanced' },
     { name: 'PostgreSQL', icon: SiPostgresql, level: 'advanced' },
-    { name: 'JWT', icon: FaCode, level: 'advanced' },
-    { name: 'Docker', icon: FaDocker, level: 'intermediate' },
-    { name: 'Git', icon: FaGitAlt, level: 'advanced' },
-    { name: 'AWS', icon: FaAws, level: 'intermediate' },
-    { name: 'Kubernetes', icon: FaDocker, level: 'intermediate' }
+    { name: 'Express', icon: SiExpress, level: 'advanced' },
+    { name: 'Figma', icon: FaFigma, level: 'intermediate' },
+    { name: 'Photoshop', icon: SiAdobephotoshop, level: 'intermediate' },
+    { name: 'WordPress', icon: FaWordpress, level: 'intermediate' },
+    { name: 'Adobe XD', icon: SiAdobexd, level: 'intermediate' },
+    { name: 'Illustrator', icon: SiAdobeillustrator, level: 'intermediate' },
+    { name: 'Raspberry Pi', icon: FaRaspberryPi, level: 'intermediate' },
+    { name: 'GitHub', icon: FaGithub, level: 'advanced' },
+    { name: 'Java', icon: FaJava, level: 'intermediate' },
+    { name: 'JavaScript', icon: SiJavascript, level: 'advanced' },
+    { name: 'MongoDB', icon: SiMongodb, level: 'intermediate' },
+    { name: 'MySQL', icon: SiMysql, level: 'advanced' },
+    { name: 'Node.js', icon: FaNodeJs, level: 'advanced' },
+    { name: 'Postman', icon: SiPostman, level: 'advanced' },
+    { name: 'Python', icon: FaPython, level: 'intermediate' },
+    { name: 'React', icon: FaReact, level: 'advanced' },
+    { name: 'React Native', icon: FaReact, level: 'intermediate' },
+    { name: 'TypeScript', icon: SiTypescript, level: 'advanced' },
+    { name: 'Twitter', icon: FaTwitter, level: 'advanced' },
+    { name: 'Gmail', icon: SiGmail, level: 'advanced' },
+    { name: 'Instagram', icon: FaInstagram, level: 'advanced' },
+    { name: 'Flutter', icon: SiFlutter, level: 'intermediate' },
+    { name: 'Angular', icon: SiAngular, level: 'advanced' },
+    { name: 'Kotlin', icon: SiKotlin, level: 'intermediate' },
+    { name: 'Next.js', icon: SiNextdotjs, level: 'advanced' },
+    { name: 'PHP', icon: FaPhp, level: 'intermediate' },
   ];
 
   return (
@@ -59,7 +80,7 @@ const Skills = () => {
             Skills & Tecnologías
           </h2>
           <p className="text-gray-600 max-w-2xl mx-auto">
-            Herramientas y tecnologías que uso para construir soluciones increíbles
+            Stack tecnológico y competencias técnicas que aplico en el desarrollo de soluciones robustas y escalables.
           </p>
         </div>
 

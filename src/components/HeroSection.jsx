@@ -68,16 +68,13 @@ const HeroSection = ({ profileImage, quotes, playlist }) => {
               <div className="intro-box">
                 <h1 className="intro-title">
                   Hola, soy{' '}
-                  <span className="intro-name">Iram Azalia</span>
+                  <span className="intro-name">Isaí López</span>
                 </h1>
                 <p className="intro-role">
-                  Desarrolladora Full Stack | Especialista en Backend
+                  Full Stack Developer | especializado en Backend
                 </p>
                 <p className="intro-text">
-                  Desarrolladora de software con experiencia en desarrollo backend y full stack. 
-                  Experiencia en desarrollo end-to-end de sistemas de gestión financiera, desde diseño UI/UX 
-                  hasta implementación backend con C#, JWT y despliegue en Hostinger. Competente en arquitecturas 
-                  escalables, seguridad de aplicaciones y desarrollo móvil.
+                  Fundador de Softvana y desarrollador de software con experiencia en backend y full stack. He trabajado en el desarrollo end-to-end de sistemas de gestión para instituciones agrarias y municipales, desde UI/UX hasta backend con FastAPI, NestJS, PostgreSQL y despliegue en Vercel. Dominio de arquitecturas hexagonales, modelado de reglas de negocio y desarrollo frontend y móvil con Next.js, TypeScript y React.
                 </p>
               </div>
 

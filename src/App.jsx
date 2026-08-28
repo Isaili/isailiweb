@@ -8,7 +8,7 @@ import Footer from './components/Footer';
 import { personalData } from './data/personalData';
 import './App.css';
 
-import meImage from './assets/me.jpeg';
+import meImage from './assets/me2.jpeg';
 
 function App() {
   const profileData = {

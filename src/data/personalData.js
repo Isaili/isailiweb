@@ -2,10 +2,10 @@ import playaImage from '../assets/playa.jpg';
 import escuelaImage from '../assets/escuela.jpg';
 
 export const personalData = {
-  name: 'Iram Azalia Ruiz Aparicio',
-  title: 'Desarrolladora Full Stack | Especialista en Backend',
-  bio: 'Desarrolladora Full Stack apasionada por crear experiencias digitales auténticas',
-  description: 'Desarrolladora de software con experiencia en desarrollo backend y full stack. Experiencia en desarrollo end-to-end de sistemas de gestión financiera, desde diseño UI/UX hasta implementación backend con C#, JWT y despliegue en Hostinger. Competente en arquitecturas escalables, seguridad de aplicaciones y desarrollo móvil.',
+  name: 'Isai AbeL lOPEZ Sanchez',
+  title: 'Full Stack Developer | especializado en Backend',
+  bio: 'Desarrollador Full Stack apasionado por crear experiencias digitales auténticas',
+  description: '  Fundador de Softvana y desarrollador de software con experiencia en backend y full stack. He trabajado en el desarrollo end-to-end de sistemas de gestión para instituciones agrarias y municipales, desde UI/UX hasta backend con FastAPI, NestJS, PostgreSQL y despliegue en Vercel. Dominio de arquitecturas hexagonales, modelado de reglas de negocio y desarrollo frontend y móvil con Next.js, TypeScript y React.',
   
   email: 'iramazaliar@gmail.com',
   phone: '+52 961 376 2202',
@@ -15,29 +15,29 @@ export const personalData = {
   
   quotes: [
     { 
-      quote: 'Triunfaras en lo que elijas hacer, y la luz brillara en el camino que tienes por delante', 
-      author: 'Job 22:28'
+      quote: 'La constancia le gana al talento cuando el talento no es constante.', 
+      author: 'Isaili'
     },
     { 
-      quote: 'Hacer todo con honestidad, servicio y amor ', 
+      quote: 'El progreso no siempre se ve, pero siempre se acumula. ', 
       author: null 
     },
   ],
   playlist: [
   { 
-    name: 'PM', 
-    artist: 'MVLDITOS HOMBRES', 
-    spotifyUrl: 'https://open.spotify.com/intl-es/track/46ePpPGWWhOb37HFqQVsHA?si=4234c4514afc42d6' 
+    name: 'Bellavista 130', 
+    artist: 'JuanPalitosChinos', 
+    spotifyUrl: 'https://open.spotify.com/intl-es/track/1yXiLIBmJau1WnLruUy3k5?si=45fc870b3d334516' 
   },
   { 
-    name: 'Shock en mi costa', 
-    artist: 'Plastical people', 
-    spotifyUrl: 'https://open.spotify.com/intl-es/track/46ePpPGWWhOb37HFqQVsHA?si=c3a1dc8923da4365' 
+    name: 'De Mentiritas', 
+    artist: 'Valdo Rodriguez', 
+    spotifyUrl: 'https://open.spotify.com/intl-es/track/7JsK6SwLprWuHUTPKQd3Pf?si=6db4a938501247b3' 
   },
   { 
-    name: 'Trouble', 
-    artist: 'Coldplay', 
-    spotifyUrl: 'https://open.spotify.com/intl-es/track/0R8P9KfGJCDULmlEoBagcO?si=46cec71bb401482b' 
+    name: 'Relato Corto', 
+    artist: 'Sabino', 
+    spotifyUrl: 'https://open.spotify.com/intl-es/track/3sGO3yiBeLOIBEfLUsvTEq?si=7341391020df4d58' 
   },
   ],
   socialLinks: {

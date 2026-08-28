@@ -3,7 +3,7 @@ import QuoteBubble from './QuoteBubble';
 import './MoodCollage.css';
 
 // Importar imágenes
-import meImage from '../assets/me.jpeg';
+import meImage from '../assets/me2.jpeg';
 import camaraImage from '../assets/camara.png';
 import gatitoImage from '../assets/gatito.png';
 import fresasImage from '../assets/fresas.png';
@@ -15,11 +15,12 @@ import cocaImage from '../assets/coca.png';
 import errorImage from '../assets/error.png';
 import gatitonegroImage from '../assets/gatitonegro.png';
 import pezImage from '../assets/pez.png';
+import auifoImage from '../assets/audifo.png'
 
 const MoodCollage = ({ profileImage, quotes = [] }) => {
   const defaultQuotes = [
     { quote: 'Finding new paths to travel is better than being stuck', author: null },
-    { quote: 'Hacer lo que te gusta con honestidad, servicio y amor es lo mejor que puedes hacer', author: null },
+    { quote: 'El progreso no siempre se ve, pero siempre se acumula.', author: null },
   ];
 
   const displayQuotes = quotes.length > 0 ? quotes : defaultQuotes;
@@ -29,7 +30,7 @@ const MoodCollage = ({ profileImage, quotes = [] }) => {
     <div className="mood-collage relative w-full overflow-hidden">
       {/* Background elements */}
       <div className="absolute inset-0 bg-gradient-to-br from-pastel-pink via-pastel-blue to-pastel-green opacity-30"></div>
-      
+
       {/* Decorative star elements */}
       <div className="absolute top-5 left-5 text-yellow-400 animate-pulse z-10">
         <FaStar className="text-3xl rotate-12" />
@@ -41,8 +42,8 @@ const MoodCollage = ({ profileImage, quotes = [] }) => {
       {/* Stickers - Cámara (top right, más separado) */}
       <div className="absolute top-4 right-[8%] md:top-100 md:right-[0%] z-10 sticker-animation" style={{ animationDelay: '0.2s', margin: '7px' }}>
         <img
-          src={camaraImage}
-          alt="Cámara"
+          src={auifoImage}
+          alt="Audífonos"
           className="w-20 h-20 md:w-36 md:h-36 object-contain drop-shadow-lg rotate-[-10deg] hover:scale-110 transition-transform duration-300"
         />
       </div>
@@ -137,13 +138,13 @@ const MoodCollage = ({ profileImage, quotes = [] }) => {
         />
       </div>
 
-      {/* Central profile image - me.jpeg */}
+      {/* Central profile image - me1.jpeg */}
       <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-20">
         <div className="neuromorphic p-3 md:p-4 rounded-full">
           <img
-            src={meImage}
-            alt="Iram Azalia"
-            className="w-48 h-48 md:w-64 md:h-64 rounded-full object-cover border-4 border-white shadow-lg"
+            src={finalProfileImage}
+            alt="Isaí López"
+            className="w-48 h-48 md:w-64 md:h-64 rounded-full object-cover object-top border-4 border-white shadow-lg"
           />
         </div>
       </div>
@@ -160,7 +161,7 @@ const MoodCollage = ({ profileImage, quotes = [] }) => {
       <div className="absolute bottom-5 left-1/2 transform -translate-x-1/2 z-20">
         <div className="neuromorphic-sm p-3 px-4">
           <p className="text-sm md:text-base font-medium text-gray-800">
-            Hola a todos...:D
+            El resto es competencia... 
           </p>
         </div>
       </div>
@@ -169,4 +170,3 @@ const MoodCollage = ({ profileImage, quotes = [] }) => {
 };
 
 export default MoodCollage;
-
