@@ -1,39 +1,42 @@
 import { FaGithub, FaExternalLinkAlt } from 'react-icons/fa';
 import './Projects.css';
-import arxImage from '../assets/arx.png';
-import codiselImage from '../assets/codisel.png';
+
+
 import orderflowImage from '../assets/orderflow.png';
-import apiceImage from '../assets/apice.jpg';
+
+import comuner from '../assets/comuneros.png';
+import zoqueImage from '../assets/zoque.png';
+import cafeImage from '../assets/cafe.png';
 
 
 const Projects = () => {
   const projects = [
     {
-      title: 'CoDiSel - Financial Payment System',
-      description: 'Sistema integral de administración de pagos que digitaliza procesos financieros, reemplazando Excel y papel por una app móvil/web con gestión de pagos inmediatos, evidencia digital y reportes automáticos.',
-      technologies: ['React', 'React Native', 'C# .NET', 'NestJS', 'MySQL', 'Socket.io', 'Hostinger'],
-      image: codiselImage,
-      githubUrl: 'https://github.com/CodiselComercial/CDL_FRONT.git',
-      liveUrl: 'https://app.uizard.io/p/4872e85b/preview',
+      title: 'CDBC-Sistema de Gestión de Bienes Comunales',
+      description: 'Aplicación web que digitaliza el control de tierras comunales, reemplazando registros manuales por una plataforma centralizada con gestión de comuneros, parcelas, lotes, pagos, multas y check-in por QR, incluyendo reglas de negocio agrarias formalizadas y reportes.',
+      technologies: ['Next.js', 'TypeScript', 'React', 'JWT', 'Vercel', 'Turbopack'],
+      image: comuner,
+      githubUrl: 'https://github.com/Isaili/comuneros.git',
+      liveUrl: 'https://comuneros.vercel.app',
     },
     {
-      title: 'APICE - Habit Tracker & Goal Manager',
-      description: 'Aplicación para desarrollo personal con seguimiento de hábitos diarios, rutinas personalizadas, visión board interactivo y widgets móviles para recordatorios de metas.',
-      technologies: ['React', 'React Native', 'TypeScript', 'Node.js', 'MongoDB', 'Firebase', 'Expo'],
-      image: apiceImage,
-      githubUrl: 'https://github.com/maruchanazalia/APICE.git',
+      title: 'Landing Page — Auto Transportes Zoque',
+      description: 'Landing page para Auto Transportes Zoque, empresa de transporte en Chiapas, con catálogo de destinos, horarios y precios por ruta, proceso de compra de boletos, mapa de cobertura, testimonios, promociones y formulario de contacto.',
+      technologies: ['Next.js', 'React', 'TypeScript', 'Tailwind CSS', 'Stripe'],
+      image: zoqueImage,
+      githubUrl: '#',
       liveUrl: '#',
     },
     {
-      title: 'ARX Software Landing Page',
-      description: 'Sitio web corporativo para empresa de desarrollo de software con sistema de contacto automatizado, protección reCAPTCHA y presentación de servicios tecnológicos.',
-      technologies: ['React', 'Vite', 'EmailJS', 'Google reCAPTCHA', 'CSS Modules', 'Netlify'],
-      image: arxImage, 
-      githubUrl: '#',
-      liveUrl: 'https://arxsoftware.netlify.app/',
+      title: 'Grano y Grano - Aplicación móvil',
+      description: 'Aplicación multiplataforma para la gestión y trazabilidad de compras de café y pimienta, con registro de transacciones por tipo de producto (seco/verde), cálculo automático de totales y merma, historial filtrable y panel de estadísticas de inversión.',
+      technologies: ['Flutter', 'Dart'],
+      image: cafeImage, 
+      githubUrl: 'https://github.com/Isaili/Cafe-Pimienta.git',
+      liveUrl: '#',
     },
     {
-      title: 'OrderFlow - E-commerce Notifications',
+      title: ' - E-commerce Notifications',
       description: 'Sistema de automatización que integra Lightspeed HQ con WhatsApp API mediante webhooks para enviar actualizaciones en tiempo real del estado de pedidos a clientes.',
       technologies: ['TypeScript', 'NestJS', 'Arquitectura Hexagonal', 'Docker', 'Lightspeed API', 'WhatsApp API'],
       image: orderflowImage,
