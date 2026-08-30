@@ -4,6 +4,7 @@ import { personalData } from '../data/personalData';
 import './Contact.css';
 import cvPdf from '../assets/cv.pdf';
 
+
 const Contact = () => {
   const [formData, setFormData] = useState({
     name: '',
@@ -136,7 +137,7 @@ const Contact = () => {
                 </div>
                 <a
                   href={cvPdf}
-                  download="Iram_Azalia_Ruiz_Aparicio_CV.pdf"
+                  download="Isai_Abel_Lopez_Sanchez_CV.pdf"
                   className="flex items-center gap-4 text-gray-700 hover:text-pastel-blue transition-colors"
                 >
                   <div className="neuromorphic-sm p-3">

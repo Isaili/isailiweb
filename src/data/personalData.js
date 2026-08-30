@@ -7,11 +7,11 @@ export const personalData = {
   bio: 'Desarrollador Full Stack apasionado por crear experiencias digitales auténticas',
   description: '  Fundador de Softvana y desarrollador de software con experiencia en backend y full stack. He trabajado en el desarrollo end-to-end de sistemas de gestión para instituciones agrarias y municipales, desde UI/UX hasta backend con FastAPI, NestJS, PostgreSQL y despliegue en Vercel. Dominio de arquitecturas hexagonales, modelado de reglas de negocio y desarrollo frontend y móvil con Next.js, TypeScript y React.',
   
-  email: 'iramazaliar@gmail.com',
-  phone: '+52 961 376 2202',
-  location: 'Tuxtla Gutiérrez, Chiapas - 29014, México',
+  email: 'isailibanfer@gmail.com',
+  phone: '+52 961 107 7541',
+  location: 'Copainalá, Chiapas - 29620, México',
   portfolio: 'Curriculum Vitae',
-  github: 'maruchanazalia',
+  github: 'isaili',
   
   quotes: [
     { 
@@ -51,9 +51,9 @@ export const personalData = {
     university: 'Universidad Politécnica de Chiapas',
     degree: 'Ingeniería en Software',
     location: 'Suchiapa, México',
-    period: 'Sep 2022 - Jul 2025',
-    score: 89,
-    specialization: 'Especialidad: Aplicaciones Contables, Sistemas Financieros',
+    period: ' Ene 2023 - Dic 2026',
+    score: 92,
+    specialization: 'Desarrollo Full Stack y Diseño UI/UX',
   },
   
   certifications: [
