@@ -2,11 +2,12 @@ import { FaGithub, FaExternalLinkAlt } from 'react-icons/fa';
 import './Projects.css';
 
 
-import orderflowImage from '../assets/orderflow.png';
+
 
 import comuner from '../assets/comuneros.png';
 import zoqueImage from '../assets/zoque.png';
 import cafeImage from '../assets/cafe.png';
+import matchbitImage from '../assets/matchbit.png';
 
 
 const Projects = () => {
@@ -36,11 +37,11 @@ const Projects = () => {
       liveUrl: '#',
     },
     {
-      title: ' - E-commerce Notifications',
-      description: 'Sistema de automatización que integra Lightspeed HQ con WhatsApp API mediante webhooks para enviar actualizaciones en tiempo real del estado de pedidos a clientes.',
-      technologies: ['TypeScript', 'NestJS', 'Arquitectura Hexagonal', 'Docker', 'Lightspeed API', 'WhatsApp API'],
-      image: orderflowImage,
-      githubUrl: 'https://github.com/maruchanazalia/OrderFlow.git',
+      title: 'MatchBit',
+      description: 'Plataforma de monetización deportiva con flujos de registro e inscripción a eventos, selección de planes para negocios B2B, panel administrativo con dashboard de clientes/eventos/carreras/clubes, y gestión de integraciones por tenant.',
+     technologies: ['Python', 'FastAPI', 'SQLAlchemy', 'Alembic', 'Docker', 'React', 'Next.js', 'React Hook Form', 'Yup'],
+      image: matchbitImage,
+      githubUrl: '#',
       liveUrl: '#',
     },
   ];
