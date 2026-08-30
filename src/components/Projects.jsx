@@ -7,7 +7,7 @@ import './Projects.css';
 import comuner from '../assets/comuneros.png';
 import zoqueImage from '../assets/zoque.png';
 import cafeImage from '../assets/cafe.png';
-import matchbitImage from '../assets/matchbit.png';
+import matchbitImage from '../assets/match.png';
 
 
 const Projects = () => {
@@ -41,7 +41,7 @@ const Projects = () => {
       description: 'Plataforma de monetización deportiva con flujos de registro e inscripción a eventos, selección de planes para negocios B2B, panel administrativo con dashboard de clientes/eventos/carreras/clubes, y gestión de integraciones por tenant.',
      technologies: ['Python', 'FastAPI', 'SQLAlchemy', 'Alembic', 'Docker', 'React', 'Next.js', 'React Hook Form', 'Yup'],
       image: matchbitImage,
-      githubUrl: '#',
+      githubUrl: 'https://github.com/cloudteeniomx/matchbit.git',
       liveUrl: '#',
     },
   ];
