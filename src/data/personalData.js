@@ -11,7 +11,7 @@ export const personalData = {
   phone: '+52 961 107 7541',
   location: 'Copainalá, Chiapas - 29620, México',
   portfolio: 'Curriculum Vitae',
-  github: 'isaili',
+  github: 'https://github.com/Isaili',
   
   quotes: [
     { 
@@ -41,10 +41,10 @@ export const personalData = {
   },
   ],
   socialLinks: {
-    linkedin: 'https://www.linkedin.com/in/iram-azalia-ruiz-aparicio-81209b24a/',
-    github: 'https://github.com/maruchanazalia',
+    linkedin: 'https://www.linkedin.com/in/isai-abel-lopez-sanchez-0845912a3/',
+    github: 'https://github.com/Isaili',
     twitter: 'https://twitter.com',
-    instagram: 'https://www.instagram.com/ruiz.iram/',
+    instagram: 'https://www.instagram.com/isaili_banfer',
   },
   
   education: {

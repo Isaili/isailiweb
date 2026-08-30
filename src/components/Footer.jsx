@@ -9,10 +9,10 @@ const Footer = () => {
       <div className="container mx-auto px-6">
         <div className="flex flex-col md:flex-row items-center justify-between gap-4">
           <p className="text-gray-600 text-sm">
-            © {currentYear} Mi Portafolio. Todos los derechos reservados.
+            © {currentYear} Mi Portafolio Isaili. Todos los derechos reservados.
           </p>
           <p className="text-gray-600 text-sm flex items-center gap-2">
-            Hecho con <FaHeart className="text-red-500" /> y mucho café
+            Hecho con <FaHeart className="text-blue-600" /> y mucho café
           </p>
         </div>
       </div>
