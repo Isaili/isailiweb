@@ -70,15 +70,18 @@ export const personalData = {
   availability: 'Remoto • Tiempo completo',
   
   hobbies: [
-    'Hacer ejercicio',
-    'Correr',
-    'Cantar',
-    'Bailar',
-    'Pintar en acuarelas',
-    'Fotografía',
-    'Leer',
-    'Ver películas',
-  ],
+  'Hacer ejercicio',
+  'Correr',
+  'Cantar',
+  'Fotografía',
+  'Leer',
+  'Ver películas',
+  'Viajar',
+  'Documentar',
+  'Fútbol',
+  'Hiking',
+  'Parapente',
+],
   youtube: {
     channel: 'https://www.youtube.com/@azaliasFilms',
     description: "azalia's films, just for me, My dreams."

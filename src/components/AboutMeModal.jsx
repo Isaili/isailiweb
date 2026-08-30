@@ -1,8 +1,9 @@
 import { useEffect } from 'react';
 import { createPortal } from 'react-dom';
-import { FaTimes, FaYoutube, FaDumbbell, FaRunning, FaMusic, FaPaintBrush, FaCamera } from 'react-icons/fa';
+import { FaDumbbell, FaRunning, FaMusic, FaCamera, FaBook, FaFilm, FaPlane, FaVideo, FaFutbol, FaMountain, FaTimes, FaYoutube } from 'react-icons/fa';
+import { MdParagliding } from 'react-icons/md';
 import { personalData } from '../data/personalData';
-import cuerpoImage from '../assets/cuerpo.jpeg';
+import cuerpoImage from '../assets/isailime.jpeg';
 import './AboutMeModal.css';
 
 const AboutMeModal = ({ isOpen, onClose }) => {
@@ -20,13 +21,18 @@ const AboutMeModal = ({ isOpen, onClose }) => {
   if (!isOpen) return null;
 
   const hobbyIcons = {
-    'Hacer ejercicio': FaDumbbell,
-    'Correr': FaRunning,
-    'Cantar': FaMusic,
-    'Bailar': FaMusic,
-    'Pintar en acuarelas': FaPaintBrush,
-    'Fotografía': FaCamera,
-  };
+  'Hacer ejercicio': FaDumbbell,
+  'Correr': FaRunning,
+  'Cantar': FaMusic,
+  'Fotografía': FaCamera,
+  'Leer': FaBook,
+  'Ver películas': FaFilm,
+  'Viajar': FaPlane,
+  'Documentar': FaVideo,
+  'Fútbol': FaFutbol,
+  'Hiking': FaMountain,
+  'Parapente': MdParagliding,
+};
 
   const modalContent = (
     <div className="about-me-modal-overlay" onClick={onClose}>
@@ -44,14 +50,14 @@ const AboutMeModal = ({ isOpen, onClose }) => {
             Sobre Mí :3
           </h2>
           <p className="text-gray-600">
-            Un poco más sobre quién soy fuera del código
+            Un poco más sobre quién soy en el mundo
           </p>
         </div>
 
         <div className="about-me-photo-section">
           <img
             src={cuerpoImage}
-            alt="Iram Azalia"
+            alt="Isai Lopez"
             className="about-me-photo"
           />
         </div>
