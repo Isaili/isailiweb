@@ -3,11 +3,11 @@ import './Projects.css';
 
 
 
-
+import roomlyImage from '../assets/roomly.png';
 import comuner from '../assets/comuneros.png';
 import zoqueImage from '../assets/zoque.png';
 import cafeImage from '../assets/cafe.png';
-import matchbitImage from '../assets/match.png';
+
 
 
 const Projects = () => {
@@ -37,13 +37,14 @@ const Projects = () => {
       liveUrl: '#',
     },
     {
-      title: 'MatchBit',
-      description: 'Plataforma de monetización deportiva con flujos de registro e inscripción a eventos, selección de planes para negocios B2B, panel administrativo con dashboard de clientes/eventos/carreras/clubes, y gestión de integraciones por tenant.',
-     technologies: ['Python', 'FastAPI', 'SQLAlchemy', 'Alembic', 'Docker', 'React', 'Next.js', 'React Hook Form', 'Yup'],
-      image: matchbitImage,
-      githubUrl: 'https://github.com/cloudteeniomx/matchbit.git',
-      liveUrl: '#',
+      title: 'UI-UX Roomly',
+      description: 'Plataforma digital desarrollada por Softvana S.A. de C.V., diseñada para simplificar y agilizar la búsqueda de habitaciones de alquiler.',
+      technologies: ['Figma', 'Wireframes', 'Prototyping', 'Design Systems', 'User Flows'],
+      image: roomlyImage,
+      githubUrl: 'https://github.com/KiritoKazut0/Roomly.git',
+      liveUrl: 'https://www.figma.com/design/RHgdNM3e5YMKqdKLdiXgmP/Untitled?node-id=45-147&t=sc0gmvey8SxeU3c0-0',
     },
+   
   ];
 
   return (
