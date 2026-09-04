@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { FaEnvelope, FaPhone, FaLinkedin, FaGithub, FaTwitter, FaInstagram, FaMapMarkerAlt, FaFileDownload } from 'react-icons/fa';
-import { personalData } from '../data/personalData';
+import { personalData } from '../../../shared/data/personalData';
 import './Contact.css';
 import cvPdf from '../assets/cv.pdf';
 
@@ -178,4 +178,3 @@ const Contact = () => {
 };
 
 export default Contact;
-

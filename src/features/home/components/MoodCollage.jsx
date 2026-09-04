@@ -4,7 +4,6 @@ import './MoodCollage.css';
 
 // Importar imágenes
 import meImage from '../assets/me2.jpeg';
-import camaraImage from '../assets/camara.png';
 import gatitoImage from '../assets/gatito.png';
 import fresasImage from '../assets/fresas.png';
 import solecitoImage from '../assets/solecito.png';

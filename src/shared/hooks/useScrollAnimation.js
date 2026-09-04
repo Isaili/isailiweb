@@ -22,17 +22,17 @@ export const useScrollAnimation = (options = {}) => {
       }
     );
 
-    if (ref.current) {
-      observer.observe(ref.current);
+    const observedElement = ref.current;
+    if (observedElement) {
+      observer.observe(observedElement);
     }
 
     return () => {
-      if (ref.current) {
-        observer.unobserve(ref.current);
+      if (observedElement) {
+        observer.unobserve(observedElement);
       }
     };
   }, [options.threshold, options.rootMargin, options.once]);
 
   return [ref, isVisible];
 };
-

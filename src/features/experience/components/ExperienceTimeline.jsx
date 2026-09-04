@@ -2,32 +2,11 @@ import { FaBriefcase, FaCalendarAlt, FaMapMarkerAlt } from 'react-icons/fa';
 import './ExperienceTimeline.css';
 
 const ExperienceTimeline = ({ experiences = [] }) => {
-  const defaultExperiences = [
-    {
-      title: 'Full Stack Developer',
-      company: 'Company Name',
-      period: '2023 - Present',
-      location: 'Remoto',
-      description: 'Desarrollo de aplicaciones web con React, Node.js y bases de datos.',
-      technologies: ['React', 'Node.js', 'PostgreSQL'],
-    },
-    {
-      title: 'Backend Developer',
-      company: 'Previous Company',
-      period: '2021 - 2023',
-      location: 'Presencial',
-      description: 'Desarrollo de APIs RESTful y microservicios.',
-      technologies: ['NestJS', 'Go', 'MongoDB'],
-    },
-  ];
-
-  const items = experiences.length > 0 ? experiences : defaultExperiences;
-
   return (
     <div className="relative">
       <div className="absolute left-8 top-0 bottom-0 w-0.5 bg-gradient-to-b from-pastel-blue via-pastel-green to-pastel-purple"></div>
       <div className="space-y-8">
-        {items.map((exp, index) => (
+        {experiences.map((exp, index) => (
           <div key={index} className="relative pl-20">
             <div className="absolute left-6 w-4 h-4 bg-pastel-blue rounded-full border-4 border-soft-gray neuromorphic-sm"></div>
             <div className="neuromorphic p-6 hover:neuromorphic-hover transition-all duration-300">
@@ -70,4 +49,3 @@ const ExperienceTimeline = ({ experiences = [] }) => {
 };
 
 export default ExperienceTimeline;
-

@@ -33,7 +33,7 @@ import {
   SiNextdotjs,
 } from 'react-icons/si';
 import SkillCard from './SkillCard';
-import { useScrollAnimation } from '../hooks/useScrollAnimation';
+import { useScrollAnimation } from '../../../shared/hooks/useScrollAnimation';
 import './Skills.css';
 
 const Skills = () => {

@@ -1,18 +1,34 @@
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import { createPortal } from 'react-dom';
 import { FaDumbbell, FaRunning, FaMusic, FaCamera, FaBook, FaFilm, FaPlane, FaVideo, FaFutbol, FaMountain, FaTimes, FaYoutube } from 'react-icons/fa';
 import { MdParagliding } from 'react-icons/md';
-import { personalData } from '../data/personalData';
+import { personalData } from '../../../shared/data/personalData';
 import cuerpoImage from '../assets/isailime.jpeg';
 import './AboutMeModal.css';
 
 const AboutMeModal = ({ isOpen, onClose }) => {
+  const [showVideo, setShowVideo] = useState(false);
+
   useEffect(() => {
     if (isOpen) {
       document.body.style.overflow = 'hidden';
+      const resetTimer = setTimeout(() => {
+        setShowVideo(false);
+      }, 0);
+
+      const videoTimer = setTimeout(() => {
+        setShowVideo(true);
+      }, 8000);
+
+      return () => {
+        clearTimeout(resetTimer);
+        clearTimeout(videoTimer);
+        document.body.style.overflow = 'unset';
+      };
     } else {
       document.body.style.overflow = 'unset';
     }
+
     return () => {
       document.body.style.overflow = 'unset';
     };
@@ -55,11 +71,23 @@ const AboutMeModal = ({ isOpen, onClose }) => {
         </div>
 
         <div className="about-me-photo-section">
-          <img
-            src={cuerpoImage}
-            alt="Isai Lopez"
-            className="about-me-photo"
-          />
+          {showVideo ? (
+            <div className="about-me-video-wrapper">
+              <iframe
+                src="https://www.youtube-nocookie.com/embed/SvwmRTgL20U?autoplay=1&rel=0"
+                title="Tutorial sobre mí"
+                className="about-me-video"
+                allow="autoplay; encrypted-media; picture-in-picture"
+                allowFullScreen
+              />
+            </div>
+          ) : (
+            <img
+              src={cuerpoImage}
+              alt="Isai Lopez"
+              className="about-me-photo"
+            />
+          )}
         </div>
 
         <div className="about-me-section">
@@ -118,4 +146,3 @@ const AboutMeModal = ({ isOpen, onClose }) => {
 };
 
 export default AboutMeModal;
-
