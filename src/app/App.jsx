@@ -7,7 +7,6 @@ import Contact from '../features/contact/components/Contact';
 import Footer from '../features/navigation/components/Footer';
 import { personalData } from '../shared/data/personalData';
 import './App.css';
-
 import meImage from '../features/home/assets/me2.jpeg';
 
 function App() {

@@ -55,8 +55,64 @@
 }
 
 @layer utilities {
+  .portfolio-card {
+    transform-style: preserve-3d;
+    transition: transform 400ms ease, box-shadow 400ms ease;
+  }
+
+  .portfolio-card:hover {
+    transform: perspective(900px) rotateX(2deg) rotateY(-2deg) translateY(-6px);
+  }
+}
+
+@layer utilities {
   .text-balance {
     text-wrap: balance;
+  }
+
+  /* Brighter accents and subtle depth across the portfolio. */
+  .text-pastel-blue {
+    color: #4a9eff !important;
+  }
+
+  .text-pastel-green {
+    color: #3fa66b !important;
+  }
+
+  .bg-pastel-blue {
+    background-color: #d4edff !important;
+  }
+
+  .bg-pastel-green {
+    background-color: #d5f7df !important;
+  }
+
+  .bg-pastel-purple {
+    background-color: #e5d7ff !important;
+  }
+
+  .bg-pastel-pink {
+    background-color: #ffd6df !important;
+  }
+
+  .technology-badge {
+    background-color: #e5f3ff !important;
+  }
+
+  .section-heading {
+    position: relative;
+    display: inline-block;
+  }
+
+  .section-heading::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -0.65rem;
+    width: 3.5rem;
+    height: 0.25rem;
+    border-radius: 999px;
+    background: linear-gradient(90deg, #4a9eff, #55c98a);
   }
 
 }

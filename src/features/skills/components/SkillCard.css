@@ -2,3 +2,18 @@
 @tailwind components;
 @tailwind utilities;
 
+.skill-level-color.bg-pastel-yellow {
+  background-color: #fff9e5 !important;
+}
+
+.skill-level-color.bg-pastel-blue {
+  background-color: #e5f3ff !important;
+}
+
+.skill-level-color.bg-pastel-green {
+  background-color: #e5ffe5 !important;
+}
+
+.skill-level-color.bg-pastel-purple {
+  background-color: #f0e5ff !important;
+}

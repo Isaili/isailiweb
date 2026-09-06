@@ -34,7 +34,7 @@ const ExperienceTimeline = ({ experiences = [] }) => {
                 {exp.technologies?.map((tech, techIndex) => (
                   <span
                     key={techIndex}
-                    className="px-3 py-1 bg-pastel-blue rounded-full text-xs font-medium text-gray-700"
+                    className="technology-badge px-3 py-1 bg-pastel-blue rounded-full text-xs font-medium text-gray-700"
                   >
                     {tech}
                   </span>

@@ -14,6 +14,7 @@
   display: flex;
   align-items: flex-start;
   min-height: calc(100vh - 60px);
+  isolation: isolate;
 }
 
 .parallax-wrapper {
@@ -55,6 +56,7 @@
   display: flex;
   align-items: flex-start;
   width: 100%;
+  transform-style: preserve-3d;
 }
 
 .hero-grid {
@@ -94,6 +96,13 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  transform: translateZ(18px);
+  transition: transform 350ms ease, box-shadow 350ms ease;
+}
+
+.intro-box:hover {
+  transform: translateZ(28px) translateY(-4px);
+  box-shadow: 12px 18px 28px rgba(137, 155, 177, 0.32), -8px -8px 18px #ffffff;
 }
 
 .intro-title {
@@ -166,6 +175,7 @@
     transform: translateY(-10px);
   }
 }
+
 
 @media (min-width: 768px) and (max-width: 1023px) {
   .hero-section {

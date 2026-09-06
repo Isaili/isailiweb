@@ -51,7 +51,7 @@ const Projects = () => {
     <section id="projects" className="py-20 bg-white/50">
       <div className="container mx-auto px-6">
         <div className="text-center mb-12">
-          <h2 className="text-4xl font-bold text-gray-800 mb-4">
+          <h2 className="section-heading text-4xl font-bold text-gray-800 mb-4">
             Proyectos Destacados
           </h2>
           <p className="text-gray-600 max-w-2xl mx-auto">
@@ -63,7 +63,7 @@ const Projects = () => {
           {projects.map((project, index) => (
             <div
               key={index}
-              className="neuromorphic overflow-hidden group hover:neuromorphic-hover transition-all duration-300"
+              className="neuromorphic portfolio-card overflow-hidden group hover:neuromorphic-hover transition-all duration-300"
             >
               <div className="relative overflow-hidden">
                 <img
@@ -107,7 +107,7 @@ const Projects = () => {
                   {project.technologies.map((tech, techIndex) => (
                     <span
                       key={techIndex}
-                      className="px-3 py-1 bg-pastel-blue rounded-full text-xs font-medium text-gray-700"
+                      className="technology-badge px-3 py-1 bg-pastel-blue rounded-full text-xs font-medium text-gray-700"
                     >
                       {tech}
                     </span>
@@ -123,4 +123,3 @@ const Projects = () => {
 };
 
 export default Projects;
-

@@ -76,7 +76,7 @@ const Skills = () => {
     <section id="skills" ref={ref} className="py-20 bg-white/50">
       <div className="container mx-auto px-6">
         <div className={`text-center mb-12 transition-all duration-700 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
-          <h2 className="text-4xl font-bold text-gray-800 mb-4">
+          <h2 className="section-heading text-4xl font-bold text-gray-800 mb-4">
             Skills & Tecnologías
           </h2>
           <p className="text-gray-600 max-w-2xl mx-auto">
