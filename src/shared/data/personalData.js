@@ -153,6 +153,7 @@ export const personalData = {
   'Fútbol',
   'Hiking',
   'Parapente',
+  
 ],
   youtube: {
     channel: 'https://www.instagram.com/isaili_banfer?igsh=dml2ZndueXcxMTVv',
