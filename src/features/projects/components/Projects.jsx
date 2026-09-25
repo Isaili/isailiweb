@@ -25,8 +25,8 @@ const Projects = () => {
       description: 'Landing page para Auto Transportes Zoque, empresa de transporte en Chiapas, con catálogo de destinos, horarios y precios por ruta, proceso de compra de boletos, mapa de cobertura, testimonios, promociones y formulario de contacto.',
       technologies: ['Next.js', 'React', 'TypeScript', 'Tailwind CSS', 'Stripe'],
       image: zoqueImage,
-      githubUrl: '#',
-      liveUrl: '#',
+      githubUrl: 'https://github.com/Isaili/zoque.git',
+      liveUrl: 'https://zoque.vercel.app',
     },
     {
       title: 'Grano y Grano - Aplicación móvil',
