@@ -79,7 +79,7 @@ export const personalData = {
     },
   ],
   
-  email: 'isailibanfer@gmail.com',
+  email: 'banferisaili@gmail.com',
   phone: '+52 961 107 7541',
   location: 'Copainalá, Chiapas - 29620, México',
   portfolio: 'Curriculum Vitae',

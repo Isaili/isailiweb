@@ -3,24 +3,41 @@ import { createPortal } from 'react-dom';
 import { FaDumbbell, FaRunning, FaMusic, FaCamera, FaBook, FaFilm, FaPlane, FaVideo, FaFutbol, FaMountain, FaTimes, FaYoutube } from 'react-icons/fa';
 import { MdParagliding } from 'react-icons/md';
 import { personalData } from '../../../shared/data/personalData';
+import OrbLoader from '../../../shared/components/OrbLoader';
 import cuerpoImage from '../assets/isailime.jpeg';
 import './AboutMeModal.css';
 
 const AboutMeModal = ({ isOpen, onClose }) => {
   const [showVideo, setShowVideo] = useState(false);
+  const [isContentLoading, setIsContentLoading] = useState(true);
 
   useEffect(() => {
     if (isOpen) {
       document.body.style.overflow = 'hidden';
+      let cancelled = false;
       const resetTimer = setTimeout(() => {
         setShowVideo(false);
+        setIsContentLoading(true);
       }, 0);
+
+      // Muestra el orb mientras carga la foto (mínimo 500ms para evitar parpadeo)
+      const minDelay = new Promise((resolve) => setTimeout(resolve, 500));
+      const imageLoaded = new Promise((resolve) => {
+        const img = new Image();
+        img.onload = resolve;
+        img.onerror = resolve;
+        img.src = cuerpoImage;
+      });
+      Promise.all([minDelay, imageLoaded]).then(() => {
+        if (!cancelled) setIsContentLoading(false);
+      });
 
       const videoTimer = setTimeout(() => {
         setShowVideo(true);
       }, 8000);
 
       return () => {
+        cancelled = true;
         clearTimeout(resetTimer);
         clearTimeout(videoTimer);
         document.body.style.overflow = 'unset';
@@ -61,6 +78,10 @@ const AboutMeModal = ({ isOpen, onClose }) => {
           <FaTimes className="text-2xl" />
         </button>
 
+        {isContentLoading ? (
+          <OrbLoader text="Cargando sobre mí..." />
+        ) : (
+        <>
         <div className="about-me-header">
           <h2 className="text-4xl font-bold text-gray-800 mb-2">
             Sobre Mí :3
@@ -137,6 +158,8 @@ const AboutMeModal = ({ isOpen, onClose }) => {
               ))}
             </div>
           </div>
+        )}
+        </>
         )}
       </div>
     </div>

@@ -1,0 +1,27 @@
+.orb-loader {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  padding: 3rem 1rem;
+}
+
+.orb-loader--fullscreen {
+  position: fixed;
+  inset: 0;
+  z-index: 100000;
+  background-color: #F5F5F5;
+  animation: orbLoaderFadeIn 0.2s ease-out;
+}
+
+.orb-loader-text {
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: #4b5563;
+}
+
+@keyframes orbLoaderFadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
